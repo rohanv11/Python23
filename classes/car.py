@@ -4,6 +4,9 @@ import json
 # Debug car name in santica..done
 #   code was correct, names sanica + santro = santro (according to name logic ;-})
 # Try __add__ with three args
+#   It is giving the error 'Car.__add__() missing 1 required positional argument: 'car2''
+#   Also kind of does not make sense to write a add for 3 vars... 
+#   If you write logic of adding 2, then it can any amount of sample...
 
 class Car:
     def __init__(self, name, engine, fuel_type) -> None:
