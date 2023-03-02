@@ -9,12 +9,20 @@ class Stack:
     
     def show(self):
         print("Head", self.head)
-        print(self.stack)
+        for i in range(self.head+2):
+            print(self.stack[i])
+
+    def pop(self):
+        if self.head >= 0:
+            self.head -= 1
+
+
         
 
 s = Stack()
 s.insert(1)
 s.insert(10)
+s.pop()
 s.insert(100)
 
 
