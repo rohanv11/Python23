@@ -1,15 +1,16 @@
 class Stack:
     def __init__(self) -> None:
         self.head = -1
-        self.stack = []
+        self.stack = [0 for i in range(100)]
     
     def insert(self, value):
-        self.stack.append(value)
         self.head += 1
+        self.stack[self.head
+                   ] = value
     
     def show(self):
         print("Head", self.head)
-        for i in range(self.head+2):
+        for i in range(self.head+1):
             print(self.stack[i])
 
     def pop(self):
